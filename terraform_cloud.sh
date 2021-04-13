@@ -33,7 +33,7 @@ WORKSPACE_ID=($(curl \
 echo '{"data":{"type":"configuration-versions"}}' > ./create_config_version.json
 
 UPLOAD_URL=($(curl \
-  --header "Authorization: Bearer $TOKEN" \
+  --header "Authorization: Bearer mndpTFdWqFj9pQ.atlasv1.qTg2X9a0iLg4EyaEGh5iX7DWiCvn1FCZKOJ4qjwzpeHoEYD4FzrenfiI7IOhg8terc0" \
   --header "Content-Type: application/vnd.api+json" \
   --request POST \
   --data @create_config_version.json \
