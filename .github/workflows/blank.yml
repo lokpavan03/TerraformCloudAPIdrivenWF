@@ -35,3 +35,5 @@ jobs:
         run: |
           chmod +x ./terraform_cloud.sh
           ./terraform_cloud.sh ./ loktf/TestDemo
+        env:
+          Token: ${{secrets.TF_API_TOKEN}}
