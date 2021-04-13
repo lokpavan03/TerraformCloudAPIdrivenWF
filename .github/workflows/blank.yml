@@ -34,4 +34,4 @@ jobs:
         shell: bash
         run: |
           chmod +x ./terraform_cloud.sh
-          ./terraform_cloud.sh
+          ./terraform_cloud.sh ./ loktf/TestDemo
