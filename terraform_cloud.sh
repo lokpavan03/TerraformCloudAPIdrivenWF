@@ -7,7 +7,7 @@
 # 1. Define Variables
 
 if [ -z "$1" ] || [ -z "$2" ]; then
-  echo "Usage: $0 TerraformCloudAPIdrivenWF/ loktf/TestDemo"
+  echo "Usage: $0 TerraformCloudAPIdrivenWF loktf/TestDemo"
   exit 0
 fi
 
