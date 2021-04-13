@@ -23,7 +23,7 @@ tar -zcvf "$UPLOAD_FILE_NAME" -C "$CONTENT_DIRECTORY" .
 # 3. Look Up the Workspace ID
 
 WORKSPACE_ID=($(curl \
-  --header "Authorization: Bearer mndpTFdWqFj9pQ.atlasv1.qTg2X9a0iLg4EyaEGh5iX7DWiCvn1FCZKOJ4qjwzpeHoEYD4FzrenfiI7IOhg8terc0" \
+  --header "Authorization: Bearer $Token" \
   --header "Content-Type: application/vnd.api+json" \
   https://app.terraform.io/api/v2/organizations/$ORG_NAME/workspaces/$WORKSPACE_NAME \
   | jq -r '.data.id'))
@@ -33,7 +33,7 @@ WORKSPACE_ID=($(curl \
 echo '{"data":{"type":"configuration-versions"}}' > ./create_config_version.json
 
 UPLOAD_URL=($(curl \
-  --header "Authorization: Bearer mndpTFdWqFj9pQ.atlasv1.qTg2X9a0iLg4EyaEGh5iX7DWiCvn1FCZKOJ4qjwzpeHoEYD4FzrenfiI7IOhg8terc0" \
+  --header "Authorization: Bearer $Token" \
   --header "Content-Type: application/vnd.api+json" \
   --request POST \
   --data @create_config_version.json \
