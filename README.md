@@ -3,7 +3,7 @@
 <span style="color:black;">Contents</span>
 - [GitHub Setup](#GitHub-Setup)
 - [GitHub Actions](#GitHub-Actions)
-- [API Workflow Shell Script](#API Workflow-Shell-Script)
+- [API Workflow Shell Script](#API-Workflow-Shell-Script)
 - [Terraform Cloud setup](#Terraform-Cloud-setup)
 - [Terraform Scripts](#Terraform-Scripts)
 - [Azure RBAC for Service Principal](#Azure-RBAC-for-Service-Principal)
