@@ -7,7 +7,7 @@
 # 1. Define Variables
 
 if [ -z "$1" ] || [ -z "$2" ]; then
-  echo "Usage: $0 ./ loktf/TestDemo"
+  echo "Usage: $0 <CONTENT_DIRECTORY_PATH> <ORGANIZATION>/<WORKSPACE>"
   exit 0
 fi
 
