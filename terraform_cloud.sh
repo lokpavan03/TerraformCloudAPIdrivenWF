@@ -1,9 +1,4 @@
 #!/bin/bash
-
-# Complete script for API-driven runs.
-# Documentation can be found at:
-# https://www.terraform.io/docs/cloud/run/api.html
-
 # 1. Define Variables
 
 if [ -z "$1" ] || [ -z "$2" ]; then
